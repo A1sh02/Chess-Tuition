@@ -1,0 +1,370 @@
+/* Reset and Body */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    background-color: #000;
+    color: yellow;
+    padding: 1em;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: yellow;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: white;
+    text-shadow: 0px 0px 8px yellow;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #FFD700, #333);
+    color: #fff;
+    text-align: center;
+    padding: 5em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.cta-button {
+    background-color: yellow;
+    color: black;
+    padding: 1em 2em;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cta-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.5);
+}
+
+/* Profile Section */
+.section {
+    padding: 3em 1em;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.profile-info {
+    display: flex;
+    gap: 20px;
+    margin-top: 1em;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid yellow;
+    transition: transform 0.3s;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+/* Fees Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+table th, table td {
+    padding: 1em;
+    border: 1px solid #333;
+    text-align: left;
+}
+
+table th {
+    background-color: yellow;
+}
+
+table td {
+    background-color: #f8f8f8;
+}
+
+/* FAQ Animations */
+.faq-item {
+    margin-bottom: 1em;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-question {
+    background-color: yellow;
+    color: black;
+    padding: 1em;
+    width: 100%;
+    text-align: left;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.faq-question:hover {
+    background-color: #ffd700;
+    box-shadow: 0px 0px 8px yellow;
+}
+
+.faq-answer {
+    padding: 1em;
+    display: none;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #000;
+    color: yellow;
+}
+
+/* Back-to-Top Button */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: yellow;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+#backToTop:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px yellow;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-mode header, body.dark-mode footer {
+    background-color: #222;
+}
+
+body.dark-mode .cta-button {
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode .faq-answer {
+    background-color: #444;
+    color: white;
+}
+/* Table Styling */
+.styled-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: 1.2em;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.styled-table thead tr {
+    background-color: #f3f3f3;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #ddd;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+h3 {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h2 {
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+text-align: center;
+}
+
+/* Contact Form Styling */
+#contact {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.contact-form .form-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-form label {
+    width: 80px;
+    text-align: right;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.send-button {
+    align-self: flex-end;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.send-button:hover {
+    background-color: #ffd700;
+}
+p {text-align: center;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color:#1e374b83;
+font-size: 18px;}
+
+li {text-align: center;
+    color:#1e374b83;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+/* Modal styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+/* Modal content box */
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}

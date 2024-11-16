@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Tutoring Services</title>
+    <link rel="stylesheet" href="Test Css.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Chess Tutoring</div>
+        <nav>
+            <ul>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#fees">Fees</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1 id="heroText"></h1>
+        <p>Master the art of chess with personalized tutoring tailored just for you.</p>
+        <a href="#contact" class="cta-button">Get Started</a>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile" class="section">
+        <h2>About Me</h2>
+        <br><br>
+        <p>With experience in competitive chess tournaments and a deep understanding of strategy, I aim to help students strengthen their skills and confidence on the chessboard. As a dedicated coach, I tailor each lesson to match your learning style, ensuring that every game becomes an opportunity for growth and mastery.</p>
+        <br><br>
+        <div class="profile-info">
+            <img src="Aish pfp.jpeg" alt="Profile Picture" class="profile-img">
+            <div>
+                <h2>Why Choose Me?</h2>
+                <ul>
+                    <br>
+                    <li>2400+ Rated on Lichess</li>
+                    <li>Learn Fun&Ez Openings</li>
+                    <li>Tracking every students record</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fees Section -->
+    <section id="fees">
+        <h2>Fees</h2>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Session Type</th>
+                    <th>Duration</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Beginner Lessons</td>
+                    <td>1 Hour</td>
+                    <td>RM45</td>
+                </tr>
+                <tr>
+                    <td>Intermediate Lessons</td>
+                    <td>1 Hour</td>
+                    <td>RM50</td>
+                </tr>
+                <tr>
+                    <td>Advanced Lessons</td>
+                    <td>1 Hour</td>
+                    <td>RM60</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>    
+    <!-- FAQ Section -->
+    <section id="faq" class="section">
+        <h2>Frequently Asked Questions</h2>
+        <br>
+        <div class="faq-item">
+            <button class="faq-question">What level of chess do you teach?</button>
+            <div class="faq-answer">
+                <p>I teach all levels, from beginners to advanced players.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">How are lessons conducted?</button>
+            <div class="faq-answer">
+                <p>Lessons are conducted online via Google Meet or in person if Close by</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Do I need any prior experience?</button>
+            <div class="faq-answer">
+                <p>No prior experience is required; I offer beginner lessons to introduce you to chess.</p>
+            </div>
+        </div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question">How many students are there in one class?</button>
+        <div class="faq-answer">
+            <p>The class is conducted 1-1 students, but 1 of your relative gets to join the session for free for the price of one</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question">How do I book for classes?</button>
+        <div class="faq-answer">
+            <p>Booking can be made by messaging me on <a href="wa.link/81tqhq">Whatsapp</a> as the following:
+                <li>Name:</li>
+                <li>Lichess ELO:</li>
+                <li>Lessons booked: (e.g Advanced Classes)</li>
+                <li>Bank Number</li>
+            </p>
+        </div>
+    </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <br>
+        <form class="contact-form" onsubmit="redirectToWhatsApp(event)">
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-row">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
+            </div>
+            <button type="submit" class="send-button">Send Message</button>
+        </form>
+        
+        <!-- Modal for Feedback -->
+        <div id="feedbackModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <p id="modalMessage">Your message has been sent successfully!</p>
+            </div>
+        </div>
+    </section>    
+    <!-- Back-to-Top Button -->
+    <button id="backToTop" style="display: none;">↑</button>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Chess Tutoring Services</p>
+    </footer>
+
+    <script src="Js.js"></script>
+</body>
+</html>
