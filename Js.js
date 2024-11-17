@@ -140,20 +140,3 @@ document.addEventListener("DOMContentLoaded", () =>
         }
     }
     
-    function showModal(message) {
-        // Get the modal elements
-        const modal = document.getElementById("feedbackModal");
-        const modalMessage = document.getElementById("modalMessage");
-    
-        // Update the modal message
-        modalMessage.textContent = message;
-    
-        // Display the modal
-        modal.style.display = "block";
-    }
-    
-    function closeModal() {
-        // Hide the modal
-        document.getElementById("feedbackModal").style.display = "none";
-    }
-    
