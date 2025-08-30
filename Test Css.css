@@ -304,7 +304,7 @@ text-align: center;
     font-weight: bold;
 }
 
-.contact-form input[type="email"],
+.contact-form input[type="name"],
 .contact-form textarea {
     width: 100%;
     padding: 10px;
@@ -393,3 +393,4 @@ img{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
